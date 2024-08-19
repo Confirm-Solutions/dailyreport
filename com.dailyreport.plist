@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.__USER__.dailyreport</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>__APP_PATH__/dailyreport.py</string>
+        <string>-y</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>18</integer> <!-- This sets the script to run at 6:00 PM -->
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>__APP_PATH__/dailyreport.log</string>
+    <key>StandardErrorPath</key>
+    <string>__APP_PATH__/dailyreport_error.log</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
