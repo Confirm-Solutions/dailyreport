@@ -1,6 +1,8 @@
 import os
+
 print(os.getcwd())
 import sys
+
 print(sys.executable)
 
 try:
@@ -120,7 +122,9 @@ if raw_data.startswith("Error"):
     message_content = raw_data
 else:
     username = os.environ["USER"]
-    message_content = f"Today's Timing Report for {username}:\n" + parse_timing_data(raw_data)
+    message_content = f"Today's Timing Report for {username}:\n" + parse_timing_data(
+        raw_data
+    )
 
 # Print the report locally
 print("\n" + message_content + "\n")

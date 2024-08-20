@@ -24,8 +24,5 @@
     <string>__APP_PATH__/dailyreport.log</string>
     <key>StandardErrorPath</key>
     <string>__APP_PATH__/dailyreport_error.log</string>
-
-    <key>RunAtLoad</key>
-    <true/>
 </dict>
 </plist>
