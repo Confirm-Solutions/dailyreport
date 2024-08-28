@@ -25,8 +25,8 @@ def run_applescript():
     script = """
     tell application "TimingHelper"
         set currentDate to current date
-        set startOfDay to currentDate - (time of currentDate)
-        set endOfDay to startOfDay + (86399 as integer)
+        set startOfDay to currentDate - (86399 as integer)
+        set endOfDay to currentDate
         
         try
             set summary to get time summary between startOfDay and endOfDay
