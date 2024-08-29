@@ -25,7 +25,7 @@ def run_applescript():
     script = """
     tell application "TimingHelper"
         set currentDate to current date
-        set startOfDay to currentDate - (86399 as integer)
+        set startOfDay to (current date) - (time of (current date)) + (1 * minutes)
         set endOfDay to currentDate
         
         try
